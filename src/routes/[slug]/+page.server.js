@@ -8,7 +8,8 @@ export async function load({ params }) {
 		const db = database.connect();
 		const link = await database.findLink(db, params.slug);
 		if (link) {
-			redirect(302, link.foreign_url);
+			redirect(302, encodeURI(link.foreign_url));
+            // return {status: 302, Location: link.foreign_url};
 		}
 	}
 

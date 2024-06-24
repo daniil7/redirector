@@ -30,7 +30,7 @@
             data = data;
             notifier.success("Link added successfully");
         } else {
-            notifier.danger("Error adding a link");
+            notifier.danger(`Error adding a link: ${response.message}`);
         }
     }
 
@@ -52,7 +52,7 @@
             );
             notifier.success("Link deleted successfully");
         } else {
-            notifier.danger("Error deleting a link");
+            notifier.danger(`Error deleting a link: ${response.message}`);
         }
     }
 </script>
