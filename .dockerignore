@@ -1,0 +1,15 @@
+node_modules/
+database/
+docker/
+.git/
+
+build/
+.svelte-kit/
+.output/
+.vercel/
+
+.env
+.env.*
+
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
